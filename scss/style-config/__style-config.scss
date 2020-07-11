@@ -1,0 +1,46 @@
+/* Main Configuration Don't Touch
+	 ========================================================================== */
+// WebFonts
+@import             'fonts.scss';
+$regular    :       "open-sans-regular", sans-serif;
+$bold    	:       "open-sans-bold", sans-serif;
+
+// GEMVARA theme color
+$primary-color		:		 #00b7f0;
+$secondary-color	:		 green;
+
+// WebColors
+$white      		:        #f4f7f6;
+$black      		:        #2c2c31;
+$z-black      		:        #000000;
+$gray      			:        #36343e;
+$light-gray      	:        #5d5a67;
+$red        		:        #f93958;
+
+// Media Query Screen Size's
+$medium     :       50em; //800px
+$default    :       64em; //1024px
+$large      :       75em; //1200px
+$xlarge     :       85.5em; //1368px
+$xxlarge    :       90.1em; //1441px
+
+// Global Spaces
+$gutter-space		:	2rem;
+
+// Mobile Menu
+$height-icon		: 	1.8rem;
+$width-line			: 	3.2rem;
+$height-line		:	0.4rem;
+$transition-time	:	0.3s;
+$rotation			:	45deg	;
+$translateY			: 	($height-icon / 2);
+$translateX			: 	0;
+
+@import          	 	'media-query.scss';
+@import           	 	'typography.scss';
+@import           	 	'helpers.scss';
+@import           		'normalize.scss';
+@import           		'buttons.scss';
+
+ /* Main Configuration Don't Touch
+	 ========================================================================== */

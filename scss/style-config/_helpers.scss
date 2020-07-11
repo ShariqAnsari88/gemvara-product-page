@@ -1,0 +1,8 @@
+@mixin gutter-space {
+    padding-left: $gutter-space;
+    padding-right: $gutter-space;
+}
+@mixin wrapper {
+    max-width: 104rem;
+    margin: 0 auto;
+}
