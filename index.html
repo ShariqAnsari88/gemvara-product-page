@@ -25,7 +25,22 @@
             <div class="layout flex">
 
                 <!-- Product carousel -->
-                <div class="product-carousel">asfdas</div>
+                <div class="product-carousel">
+                    <div class="product-slider">
+                        <div><img src="assets/img/product-slider-images/round-citrine-14k-white-gold-ring-with-lab-diamond.jpg" /></div>
+                        <div><img src="assets/img/product-slider-images/round-citrine-14k-white-gold-ring-with-lab-diamond-2.jpg" /></div>
+                        <div><img src="assets/img/product-slider-images/round-citrine-14k-white-gold-ring-with-lab-diamond-3.jpg" /></div>
+                        <div><img src="assets/img/product-slider-images/round-citrine-14k-white-gold-ring-with-lab-diamond-4.jpg" /></div>
+                        <div><img src="assets/img/product-slider-images/round-citrine-14k-white-gold-ring-with-lab-diamond-5.jpg" /></div>
+                    </div>
+                    <div class="slider-nav">
+                        <div><img src="assets/img/product-slider-images/round-citrine-14k-white-gold-ring-with-lab-diamond.jpg" /></div>
+                        <div><img src="assets/img/product-slider-images/round-citrine-14k-white-gold-ring-with-lab-diamond-2.jpg" /></div>
+                        <div><img src="assets/img/product-slider-images/round-citrine-14k-white-gold-ring-with-lab-diamond-3.jpg" /></div>
+                        <div><img src="assets/img/product-slider-images/round-citrine-14k-white-gold-ring-with-lab-diamond-4.jpg" /></div>
+                        <div><img src="assets/img/product-slider-images/round-citrine-14k-white-gold-ring-with-lab-diamond-5.jpg" /></div>
+                    </div>
+                </div>
                 <!-- Product carousel -->
                 
                 <!-- Product style customizer -->
@@ -35,7 +50,31 @@
             </div>
         </div>
     </section>
-     <!-- Product header having (style customizer & product carousel) -->
+    <!-- Product header having (style customizer & product carousel) -->
+   
+    <script src="assets/js/vendor/jquery-3.5.1.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/vendor/slick.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.product-slider').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+                fade: true,
+                asNavFor: '.slider-nav'
+            });
+            $('.slider-nav').slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                asNavFor: '.product-slider',
+                arrows: false,
+                dots: false,
+                centerMode: true,
+                focusOnSelect: true
+            });
+        });
+    </script>
 
 </body>
 </html>

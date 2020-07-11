@@ -1,5 +1,36 @@
 .product-carousel {
-    width: 75%;
-    height: 250px;
-    background-color: red;
+    width: 100%;
+    @include media($medium) {
+        width: 75%;
+    }
+
+    .product-slider,
+    .slider-nav {
+        width: 100%;
+        @include media($medium) {
+            width: 45rem;
+        }
+
+        * {
+            outline: 0;
+        }
+    }
+
+    .product-slider {
+        border: .1rem solid lighten($z-black, 90);
+    }
+
+    .slider-nav {
+        margin-top: 1rem;
+        .slick-slide {
+            margin: .5rem;
+            border: .1rem solid lighten($z-black, 90);
+            opacity: .5;
+
+            &.slick-current {
+                border-color: lighten($z-black, 75);
+                opacity: 1;
+            }
+        }
+    }
 }
