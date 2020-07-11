@@ -1,8 +1,6 @@
 .top-offers-bar {
     background: lighten($primary-color, 35);
-    .content {
-       padding:.5rem 0;
-
+    .container {
         .layout {
             display: flex;
             justify-content: center;

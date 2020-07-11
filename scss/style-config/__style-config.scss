@@ -25,7 +25,12 @@ $xlarge     :       85.5em; //1368px
 $xxlarge    :       90.1em; //1441px
 
 // Global Spaces
-$gutter-space		:	2rem;
+$gutter-space						:	2rem;
+$container-gutter-space				:	8rem;
+$container-gutter-space-small		:	3rem;
+
+// Container Width
+$container-max-width: 	144rem;
 
 // Mobile Menu
 $height-icon		: 	1.8rem;
@@ -41,6 +46,7 @@ $translateX			: 	0;
 @import           	 	'helpers.scss';
 @import           		'normalize.scss';
 @import           		'buttons.scss';
+@import           		'container.scss';
 
  /* Main Configuration Don't Touch
 	 ========================================================================== */

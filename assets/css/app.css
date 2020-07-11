@@ -515,21 +515,34 @@ button,
   .button.auto-width {
     width: auto; }
 
+.section {
+  width: 100%;
+  display: inline-block; }
+  .section .container {
+    margin: 0 auto;
+    max-width: calc(100% - 3rem); }
+    @media screen and (min-width: 50em) {
+      .section .container {
+        max-width: calc(100% - 8rem); } }
+    @media screen and (min-width: 90.1em) {
+      .section .container {
+        max-width: 144rem; } }
+    .section .container .layout {
+      width: 100%; }
+
 /* Main Configuration Don't Touch
 	 ========================================================================== */
 .top-offers-bar {
   background: #a4e9ff; }
-  .top-offers-bar .content {
-    padding: .5rem 0; }
-    .top-offers-bar .content .layout {
-      display: flex;
-      justify-content: center;
-      align-items: center; }
-      .top-offers-bar .content .layout p {
-        padding-bottom: 0; }
-      .top-offers-bar .content .layout p, .top-offers-bar .content .layout a {
-        text-transform: uppercase; }
-        .top-offers-bar .content .layout p span, .top-offers-bar .content .layout a span {
-          font-family: "open-sans-bold", sans-serif; }
-      .top-offers-bar .content .layout a {
-        margin-left: 1rem; }
+  .top-offers-bar .container .layout {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .top-offers-bar .container .layout p {
+      padding-bottom: 0; }
+    .top-offers-bar .container .layout p, .top-offers-bar .container .layout a {
+      text-transform: uppercase; }
+      .top-offers-bar .container .layout p span, .top-offers-bar .container .layout a span {
+        font-family: "open-sans-bold", sans-serif; }
+    .top-offers-bar .container .layout a {
+      margin-left: 1rem; }
