@@ -41,12 +41,13 @@ $rotation			:	45deg	;
 $translateY			: 	($height-icon / 2);
 $translateX			: 	0;
 
-@import          	 	'media-query.scss';
-@import           	 	'typography.scss';
-@import           	 	'helpers.scss';
-@import           		'normalize.scss';
-@import           		'buttons.scss';
-@import           		'container.scss';
+@import          	 	'media-query',
+						'typography',
+           	 			'helpers',
+           				'normalize',
+           				'buttons',
+						'container',
+						'flex';
 
  /* Main Configuration Don't Touch
 	 ========================================================================== */
