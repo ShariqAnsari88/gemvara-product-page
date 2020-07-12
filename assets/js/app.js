@@ -4,6 +4,7 @@ $(document).ready(function(){
     let slickSlider = {
         productCarousel: $('.product-slider'),
         productCarouselNav: $('.slider-nav'),
+        relatedItemsCarousel: $(".related-slider"),
 
         slick: function(el, slidesToShow, slidesToScroll, arrows, fade, asNavFor, dots, centerMode, focusOnSelect){
             
@@ -22,11 +23,22 @@ $(document).ready(function(){
         init: function(){
             slickSlider.slick(slickSlider.productCarousel,1,1,false,true,'.slider-nav',false,null,null);
             slickSlider.slick(slickSlider.productCarouselNav,3,1,false,false,'.product-slider',false,true,true);
+            slickSlider.slick(slickSlider.relatedItemsCarousel,1,1,true,false,null,true,null,null);
         }
     }
 
     //Functions initialization
     slickSlider.init();
+
+
+    if ($(window).width() < 800) {
+        $(".p-s-column h4").on("click", function () {
+            $(".accr").slideUp();
+            if ($(this).next(".accr").is(":not(:visible)")) {
+                $(this).next(".accr").slideDown();
+            }
+        });
+    }
 
     $('#paymentDd').on("click", function(e){
         e.preventDefault();

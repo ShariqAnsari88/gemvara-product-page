@@ -1,0 +1,119 @@
+.related-items {
+    text-align: center; 
+    padding: 2rem 0 10rem;
+    .section-heading {
+        margin-bottom: 4rem;
+        p {
+            font-size: 2.1rem;
+            font-family: $roman;
+            font-weight: 700;
+            @include media($medium) {
+                font-size: 2.4rem;
+            }
+            @include media($xlarge) {
+                font-size: 2.8rem;
+            }
+        }
+    } 
+    .related-slider {
+        max-width: 45rem;
+        margin: 0 auto;
+        border: .1rem solid lighten($z-black, 90);
+        transition: 0.3s ease-in-out;
+        &:hover {
+            box-shadow: 0px 0px 21px 5px rgba(0,0,0,0.1);
+        }
+        .hover-images {
+            width: 45rem;
+            position: relative;
+            &:hover {
+                .op-layer {
+                    top: 0;
+                }
+            }
+            .op-layer {
+                opacity: 0.5;
+                position: absolute;
+                width: 100%;
+                top: 0;
+                left: 0;
+                text-align: left;
+                padding: 2rem;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                transition: 0.3s ease-in-out;
+
+                @include media($medium) {
+                    top: -50%;
+                }
+                
+                p,h4 {
+                    padding-bottom: 0;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    
+    .slick-arrow {
+        width: 15rem;
+        height: 4rem;
+        position: absolute;
+        top: calc(50% - 2rem);
+        left: -16rem;
+        z-index: 9;
+        background-color: transparent;
+        color: transparent;     
+        outline: none;
+        background-image: url(../img/next.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        border: none;
+        background-position: center center;
+        transform: rotate(180deg);
+        opacity: .5;
+        display: none;
+        @include media($medium) {
+            display: block;
+        }
+
+        &.slick-next {
+            right: -16rem;
+            left: auto;
+            transform: rotate(0deg);
+        }
+    }
+    .slick-dots {
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        bottom: -7rem;
+        position: absolute;
+        width: 100%;
+
+
+        li {
+            list-style-type: none;
+            margin: 0 0.5rem;
+            button {
+                color: transparent;
+                font-size: 0;
+                width: 20px;
+                height: 20px;
+                border-radius: 100%;
+                background: transparent;
+                border: 1px solid #e6e6e6;
+                outline: none;
+            }
+            &.slick-active {
+                button {
+                    background: #000;
+                    opacity: 0.55   ;
+                }
+            }
+        }
+    }
+}
