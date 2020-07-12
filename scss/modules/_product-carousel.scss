@@ -1,7 +1,7 @@
 .product-carousel {
     width: 100%;
     @include media($medium) {
-        width: 75%;
+        width: 50%;
     }
 
     .product-slider,
