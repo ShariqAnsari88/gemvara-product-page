@@ -5,8 +5,15 @@
         border-top: .1rem solid lighten($z-black, 90);  
         background-color: transparent;
         .review-box {
-            padding: 2rem 0;
-            position: relative; 
+            padding: 4rem 0 2rem 0;
+            position: relative;
+            border-bottom: 1px solid rgba(0,0,0,0.5);
+            @include media($medium) {
+                border: none    ;
+            }
+            &:last-child {
+                border:none;
+            }
         }
     }
     .review-box {

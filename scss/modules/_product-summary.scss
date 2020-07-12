@@ -1,5 +1,5 @@
 .product-summary {
-    padding: 45px 0;
+    padding-bottom: 4.5rem;
     .product-summary-left-col {
         position: relative;
         border: .1rem solid lighten($z-black, 90);
@@ -74,6 +74,7 @@
                 }
                 &:first-child{
                     .accr{
+
                         display: block;
                     }
                     h4 {
@@ -88,6 +89,9 @@
                         @include media($medium) {
                             border-radius: 0 0.3rem 0.3rem 0;
                         }
+                    }
+                    .accr {
+                        padding-bottom: 0;
                     }   
                 }
                 h4 {
@@ -98,10 +102,14 @@
                     text-transform: uppercase;
                     font-size: 1.2rem;
                     padding-bottom: 1.5rem;
-                    margin-bottom: 2rem;
+                    margin-bottom: 0.1rem;
+                    @include media($medium) {
+                        margin-bottom: 2rem;
+                    }
                 }
                 .accr {
                     display: none;
+                    padding: 2rem 0;
                     @include media($medium) {
                         display: block;
                     }
@@ -109,14 +117,14 @@
                         padding-left: 1.5rem;
                         padding-bottom:1.5rem;
                         text-align: left;
-                        margin-bottom: 2rem;
-                        
+                        margin-bottom: 1rem;
+
                         &:last-child {
-                            @include media($medium) {
-                                margin-bottom: 0;
-                                padding-bottom: 0;
-                            }
+                            margin-bottom: 0;
+                            padding-bottom: 0;
                         }
+                        
+                        
                         h5 {
                             font-size: 1.2rem;
                             padding-bottom: 0.5rem;

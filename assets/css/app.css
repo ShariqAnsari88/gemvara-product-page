@@ -1224,7 +1224,7 @@ template {
           transform: translateY(10px); }
 
 .product-summary {
-  padding: 45px 0; }
+  padding-bottom: 4.5rem; }
   .product-summary .product-summary-left-col {
     position: relative;
     border: 0.1rem solid #e6e6e6; }
@@ -1316,6 +1316,8 @@ template {
       @media screen and (min-width: 50em) {
         .product-summary .product-summary-right-col .product-s-table .p-s-column:last-child h4 {
           border-radius: 0 0.3rem 0.3rem 0; } }
+      .product-summary .product-summary-right-col .product-s-table .p-s-column:last-child .accr {
+        padding-bottom: 0; }
       .product-summary .product-summary-right-col .product-s-table .p-s-column h4 {
         background-color: #000000;
         padding: 1.5rem;
@@ -1324,9 +1326,13 @@ template {
         text-transform: uppercase;
         font-size: 1.2rem;
         padding-bottom: 1.5rem;
-        margin-bottom: 2rem; }
+        margin-bottom: 0.1rem; }
+        @media screen and (min-width: 50em) {
+          .product-summary .product-summary-right-col .product-s-table .p-s-column h4 {
+            margin-bottom: 2rem; } }
       .product-summary .product-summary-right-col .product-s-table .p-s-column .accr {
-        display: none; }
+        display: none;
+        padding: 2rem 0; }
         @media screen and (min-width: 50em) {
           .product-summary .product-summary-right-col .product-s-table .p-s-column .accr {
             display: block; } }
@@ -1334,11 +1340,10 @@ template {
           padding-left: 1.5rem;
           padding-bottom: 1.5rem;
           text-align: left;
-          margin-bottom: 2rem; }
-          @media screen and (min-width: 50em) {
-            .product-summary .product-summary-right-col .product-s-table .p-s-column .accr .inner-text:last-child {
-              margin-bottom: 0;
-              padding-bottom: 0; } }
+          margin-bottom: 1rem; }
+          .product-summary .product-summary-right-col .product-s-table .p-s-column .accr .inner-text:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0; }
           .product-summary .product-summary-right-col .product-s-table .p-s-column .accr .inner-text h5 {
             font-size: 1.2rem;
             padding-bottom: 0.5rem; }
@@ -1400,7 +1405,7 @@ template {
 
 .related-items {
   text-align: center;
-  padding: 2rem 0 10rem; }
+  padding: 2rem 0 3rem; }
   .related-items .section-heading {
     margin-bottom: 4rem; }
     .related-items .section-heading p {
@@ -1414,35 +1419,51 @@ template {
         .related-items .section-heading p {
           font-size: 2.8rem; } }
   .related-items .related-slider {
-    max-width: 45rem;
+    width: 100%;
     margin: 0 auto;
-    border: 0.1rem solid #e6e6e6;
     transition: 0.3s ease-in-out; }
-    .related-items .related-slider:hover {
-      box-shadow: 0px 0px 21px 5px rgba(0, 0, 0, 0.1); }
     .related-items .related-slider .hover-images {
       width: 45rem;
-      position: relative; }
+      position: relative;
+      outline: none; }
       .related-items .related-slider .hover-images:hover .op-layer {
         top: 0; }
       .related-items .related-slider .hover-images .op-layer {
-        opacity: 0.5;
-        position: absolute;
         width: 100%;
         top: 0;
         left: 0;
         text-align: left;
-        padding: 2rem;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        transition: 0.3s ease-in-out; }
+        transition: 0.3s ease-in-out;
+        flex-flow: column; }
         @media screen and (min-width: 50em) {
           .related-items .related-slider .hover-images .op-layer {
             top: -50%; } }
         .related-items .related-slider .hover-images .op-layer p, .related-items .related-slider .hover-images .op-layer h4 {
           padding-bottom: 0;
           margin-bottom: 0; }
+        .related-items .related-slider .hover-images .op-layer h4 {
+          margin: 0;
+          padding-bottom: 0.5em;
+          font-family: "Noto Serif", serif;
+          font-size: 1.8rem;
+          line-height: 1.2; }
+          .related-items .related-slider .hover-images .op-layer h4:last-child {
+            padding-bottom: 0; }
+          @media screen and (min-width: 50em) {
+            .related-items .related-slider .hover-images .op-layer h4 {
+              font-size: 2rem; } }
+          @media screen and (min-width: 75em) {
+            .related-items .related-slider .hover-images .op-layer h4 {
+              font-size: 2rem; } }
+          @media screen and (min-width: 85.5em) {
+            .related-items .related-slider .hover-images .op-layer h4 {
+              font-size: 2rem; } }
+          @media screen and (min-width: 90.1em) {
+            .related-items .related-slider .hover-images .op-layer h4 {
+              font-size: 2.2rem; } }
   .related-items .slick-arrow {
     width: 15rem;
     height: 4rem;
@@ -1460,7 +1481,7 @@ template {
     background-position: center center;
     transform: rotate(180deg);
     opacity: .5;
-    display: none; }
+    display: none !important; }
     @media screen and (min-width: 50em) {
       .related-items .slick-arrow {
         display: block; } }
@@ -1474,7 +1495,7 @@ template {
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    bottom: -7rem;
+    bottom: -6rem;
     position: absolute;
     width: 100%; }
     .related-items .slick-dots li {
@@ -1483,8 +1504,8 @@ template {
       .related-items .slick-dots li button {
         color: transparent;
         font-size: 0;
-        width: 20px;
-        height: 20px;
+        width: 15px;
+        height: 15px;
         border-radius: 100%;
         background: transparent;
         border: 1px solid #e6e6e6;
@@ -1500,8 +1521,14 @@ template {
     border-top: 0.1rem solid #e6e6e6;
     background-color: transparent; }
     .write-review.tr .review-box {
-      padding: 2rem 0;
-      position: relative; }
+      padding: 4rem 0 2rem 0;
+      position: relative;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.5); }
+      @media screen and (min-width: 50em) {
+        .write-review.tr .review-box {
+          border: none; } }
+      .write-review.tr .review-box:last-child {
+        border: none; }
   .write-review .review-box .review-col {
     justify-content: space-between;
     align-items: flex-end; }
