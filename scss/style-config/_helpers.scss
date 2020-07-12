@@ -10,7 +10,8 @@
     font-style: italic;
     color: $link-color;
 }
-@mixin wrapper {
-    max-width: 104rem;
-    margin: 0 auto;
+@mixin box-shadow {
+    -webkit-box-shadow: 0px 0px 21px 5px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 0px 21px 5px rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 21px 5px rgba(0,0,0,0.1);
 }

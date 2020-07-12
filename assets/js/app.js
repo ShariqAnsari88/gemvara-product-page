@@ -1,7 +1,7 @@
 
 $(document).ready(function(){
 
-    const slickSlider = {
+    let slickSlider = {
         productCarousel: $('.product-slider'),
         productCarouselNav: $('.slider-nav'),
 
@@ -27,5 +27,21 @@ $(document).ready(function(){
 
     //Functions initialization
     slickSlider.init();
+
+    $('#paymentDd').on("click", function(e){
+        e.preventDefault();
+        e.stopPropagation();
+        $('#paymentOptions').toggleClass('show');
+    });
+    $('#paymentDd ul li li').on("click", function(){
+        $(this).siblings().removeClass('selected');
+        $(this).addClass('selected');
+        $('#dd-selected').text($(this).text());
+    });
+    $(document).click(function(e) {
+        if($('#paymentOptions').hasClass('show')) {
+            $('#paymentOptions').removeClass('show');
+        }
+    });
 
 });

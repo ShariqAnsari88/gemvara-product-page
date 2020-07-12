@@ -1,3 +1,10 @@
+.s-b-space {
+    margin-bottom: 5rem;
+    @include media($medium) {
+        margin-bottom: 7.5rem;
+    }
+}
+
 .m-1 {
     margin: 1rem;
 }

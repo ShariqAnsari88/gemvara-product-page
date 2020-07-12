@@ -5,7 +5,7 @@
 
 @mixin base-font {
     margin: 0;
-    font-family: $roman;
+    font-family: $regular;
     font-size: 1.3rem;
     line-height: 1.5;
     @include media($medium) {
@@ -23,7 +23,7 @@
 
 @mixin large-font-style {
     margin: 0;
-    font-family: $regular;
+    font-family: $roman;
     font-size: 1.6rem;
     line-height: 1.5;
     @include media($medium) {
