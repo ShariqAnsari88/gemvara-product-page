@@ -16,20 +16,20 @@
 
 p {
   margin: 0;
-  font-family: "open-sans-regular", sans-serif;
-  font-size: 1.4rem;
+  font-family: "Noto Serif", serif;
+  font-size: 1.3rem;
   line-height: 1.5;
   padding-bottom: 0.5em; }
   @media screen and (min-width: 50em) {
     p {
-      font-size: 1.4rem; } }
+      font-size: 1.3rem; } }
   p:last-child {
     padding-bottom: 0; }
 
 h1 {
   margin: 0;
   padding-bottom: 0.5em;
-  font-family: "open-sans-bold", sans-serif;
+  font-family: "Noto Serif", serif;
   font-size: 3.6rem;
   line-height: 1; }
   h1:last-child {
@@ -50,7 +50,7 @@ h1 {
 h2 {
   margin: 0;
   padding-bottom: 0.5em;
-  font-family: "open-sans-bold", sans-serif;
+  font-family: "Noto Serif", serif;
   font-size: 3.2rem;
   line-height: 1.2; }
   h2:last-child {
@@ -71,7 +71,7 @@ h2 {
 h3 {
   margin: 0;
   padding-bottom: 0.5em;
-  font-family: "open-sans-bold", sans-serif;
+  font-family: "Noto Serif", serif;
   font-size: 2.8rem;
   line-height: 1.2; }
   h3:last-child {
@@ -92,7 +92,7 @@ h3 {
 h4 {
   margin: 0;
   padding-bottom: 0.5em;
-  font-family: "open-sans-bold", sans-serif;
+  font-family: "Noto Serif", serif;
   font-size: 2.4rem;
   line-height: 1.2; }
   h4:last-child {
@@ -113,7 +113,7 @@ h4 {
 h5 {
   margin: 0;
   padding-bottom: 0.5em;
-  font-family: "open-sans-bold", sans-serif;
+  font-family: "Noto Serif", serif;
   font-size: 2.1rem;
   line-height: 1.2;
   padding: 0; }
@@ -135,7 +135,7 @@ h5 {
 h6 {
   margin: 0;
   padding-bottom: 0.5em;
-  font-family: "open-sans-bold", sans-serif;
+  font-family: "Noto Serif", serif;
   font-size: 1.8rem;
   line-height: 1.2; }
   h6:last-child {
@@ -175,13 +175,13 @@ html {
 body {
   margin: 0;
   margin: 0;
-  font-family: "open-sans-regular", sans-serif;
-  font-size: 1.4rem;
+  font-family: "Noto Serif", serif;
+  font-size: 1.3rem;
   line-height: 1.5;
   padding-bottom: 0.5em; }
   @media screen and (min-width: 50em) {
     body {
-      font-size: 1.4rem; } }
+      font-size: 1.3rem; } }
   body:last-child {
     padding-bottom: 0; }
 
@@ -678,9 +678,201 @@ template {
   background-color: red; }
 
 .product-decision-options {
-  width: 25%;
-  height: 250px;
-  background-color: green; }
+  width: 25%; }
+  .product-decision-options .product-info {
+    width: 100%; }
+    .product-decision-options .product-info .title {
+      margin: 0;
+      font-family: "open-sans-regular", sans-serif;
+      font-size: 1.6rem;
+      line-height: 1.5; }
+      @media screen and (min-width: 50em) {
+        .product-decision-options .product-info .title {
+          font-size: 1.8rem; } }
+      @media screen and (min-width: 75em) {
+        .product-decision-options .product-info .title {
+          font-size: 2rem; } }
+      @media screen and (min-width: 85.5em) {
+        .product-decision-options .product-info .title {
+          font-size: 2.2rem; } }
+      @media screen and (min-width: 90.1em) {
+        .product-decision-options .product-info .title {
+          font-size: 2.2rem; } }
+    .product-decision-options .product-info .link {
+      margin: 0;
+      font-family: "open-sans-regular", sans-serif;
+      font-size: 1.2rem;
+      line-height: 1.5;
+      text-decoration: none;
+      color: gray;
+      font-style: italic; }
+    .product-decision-options .product-info .product-price {
+      margin: 0;
+      padding-bottom: 0.5em;
+      font-family: "Noto Serif", serif;
+      font-size: 2.1rem;
+      line-height: 1.2;
+      padding: 0;
+      font-family: "Noto Serif", serif; }
+      .product-decision-options .product-info .product-price:last-child {
+        padding-bottom: 0; }
+      @media screen and (min-width: 50em) {
+        .product-decision-options .product-info .product-price {
+          font-size: 2.4rem; } }
+      @media screen and (min-width: 75em) {
+        .product-decision-options .product-info .product-price {
+          font-size: 2.4rem; } }
+      @media screen and (min-width: 85.5em) {
+        .product-decision-options .product-info .product-price {
+          font-size: 2.6rem; } }
+      @media screen and (min-width: 90.1em) {
+        .product-decision-options .product-info .product-price {
+          font-size: 2.8rem; } }
+  .product-decision-options .payment-options-dd {
+    width: 100%; }
+    .product-decision-options .payment-options-dd .drop-down-selector {
+      width: 100%;
+      height: 4.5rem;
+      border: 0.1rem solid #bfbfbf; }
+
+.product-summary {
+  padding: 45px 0; }
+  .product-summary .product-summary-left-col {
+    position: relative;
+    border: 0.1rem solid #e6e6e6; }
+    @media screen and (min-width: 50em) {
+      .product-summary .product-summary-left-col {
+        margin-right: 5rem; } }
+    .product-summary .product-summary-left-col .product-s-img {
+      padding: 2rem; }
+      .product-summary .product-summary-left-col .product-s-img img {
+        margin: 0 auto;
+        max-width: 10rem; }
+        @media screen and (min-width: 50em) {
+          .product-summary .product-summary-left-col .product-s-img img {
+            max-width: 15rem; } }
+        @media screen and (min-width: 75em) {
+          .product-summary .product-summary-left-col .product-s-img img {
+            max-width: 24.5rem; } }
+      .product-summary .product-summary-left-col .product-s-img .product-s-caption {
+        padding: 2rem; }
+        .product-summary .product-summary-left-col .product-s-img .product-s-caption p {
+          margin: 0;
+          font-family: "open-sans-regular", sans-serif;
+          font-size: 1.6rem;
+          line-height: 1.5;
+          text-align: center; }
+          @media screen and (min-width: 50em) {
+            .product-summary .product-summary-left-col .product-s-img .product-s-caption p {
+              font-size: 1.8rem; } }
+          @media screen and (min-width: 75em) {
+            .product-summary .product-summary-left-col .product-s-img .product-s-caption p {
+              font-size: 2rem; } }
+          @media screen and (min-width: 85.5em) {
+            .product-summary .product-summary-left-col .product-s-img .product-s-caption p {
+              font-size: 2.2rem; } }
+          @media screen and (min-width: 90.1em) {
+            .product-summary .product-summary-left-col .product-s-img .product-s-caption p {
+              font-size: 2.2rem; } }
+      .product-summary .product-summary-left-col .product-s-img .product-s-text {
+        width: 75%;
+        margin: 0 auto;
+        text-align: center; }
+  .product-summary .product-summary-right-col {
+    padding-top: 4rem;
+    text-align: center; }
+    @media screen and (min-width: 50em) {
+      .product-summary .product-summary-right-col {
+        padding-top: 0; } }
+    .product-summary .product-summary-right-col p {
+      margin: 0.5rem 0; }
+    .product-summary .product-summary-right-col .about-product p {
+      text-transform: uppercase;
+      font-weight: 600; }
+    .product-summary .product-summary-right-col .product-s-name {
+      margin-bottom: 1.9rem; }
+      .product-summary .product-summary-right-col .product-s-name p {
+        margin: 0;
+        font-family: "open-sans-regular", sans-serif;
+        font-size: 1.6rem;
+        line-height: 1.5; }
+        @media screen and (min-width: 50em) {
+          .product-summary .product-summary-right-col .product-s-name p {
+            font-size: 1.8rem; } }
+        @media screen and (min-width: 75em) {
+          .product-summary .product-summary-right-col .product-s-name p {
+            font-size: 2rem; } }
+        @media screen and (min-width: 85.5em) {
+          .product-summary .product-summary-right-col .product-s-name p {
+            font-size: 2.2rem; } }
+        @media screen and (min-width: 90.1em) {
+          .product-summary .product-summary-right-col .product-s-name p {
+            font-size: 2.2rem; } }
+    .product-summary .product-summary-right-col .product-s-detail {
+      width: 75%;
+      margin: 0 auto; }
+    .product-summary .product-summary-right-col .ref-code h6 {
+      font-size: 1.3rem;
+      padding: 2rem 0 4rem; }
+    .product-summary .product-summary-right-col .product-s-table .p-s-column {
+      width: 100%;
+      text-align: left; }
+      @media screen and (min-width: 50em) {
+        .product-summary .product-summary-right-col .product-s-table .p-s-column {
+          width: calc(100% / 3); } }
+      .product-summary .product-summary-right-col .product-s-table .p-s-column:first-child .accr {
+        display: block; }
+      @media screen and (min-width: 50em) {
+        .product-summary .product-summary-right-col .product-s-table .p-s-column:first-child h4 {
+          border-radius: 0.3rem 0 0 0.3rem; } }
+      @media screen and (min-width: 50em) {
+        .product-summary .product-summary-right-col .product-s-table .p-s-column:last-child h4 {
+          border-radius: 0 0.3rem 0.3rem 0; } }
+      .product-summary .product-summary-right-col .product-s-table .p-s-column h4 {
+        background-color: #000000;
+        padding: 1.5rem;
+        color: #fff;
+        cursor: pointer;
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        padding-bottom: 1.5rem;
+        margin-bottom: 2rem; }
+      .product-summary .product-summary-right-col .product-s-table .p-s-column .accr {
+        display: none; }
+        @media screen and (min-width: 50em) {
+          .product-summary .product-summary-right-col .product-s-table .p-s-column .accr {
+            display: block; } }
+        .product-summary .product-summary-right-col .product-s-table .p-s-column .accr .inner-text {
+          padding-left: 1.5rem;
+          padding-bottom: 1.5rem;
+          text-align: left;
+          margin-bottom: 2rem; }
+          @media screen and (min-width: 50em) {
+            .product-summary .product-summary-right-col .product-s-table .p-s-column .accr .inner-text:last-child {
+              margin-bottom: 0;
+              padding-bottom: 0; } }
+          .product-summary .product-summary-right-col .product-s-table .p-s-column .accr .inner-text h5 {
+            font-size: 1.2rem;
+            padding-bottom: 0.5rem; }
+          .product-summary .product-summary-right-col .product-s-table .p-s-column .accr .inner-text small {
+            opacity: 0.55;
+            padding-bottom: 0.5rem; }
+
+.addi-info .info-box {
+  width: 75%;
+  text-align: center;
+  margin: 0 auto; }
+  .addi-info .info-box:first-child {
+    display: none; }
+  @media screen and (min-width: 50em) {
+    .addi-info .info-box {
+      width: 50%; }
+      .addi-info .info-box:first-child {
+        display: block; } }
+  .addi-info .info-box small {
+    font-size: 1.2rem;
+    display: block;
+    opacity: 0.55; }
 
 /* Slider */
 .slick-slider {

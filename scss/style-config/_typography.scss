@@ -5,11 +5,11 @@
 
 @mixin base-font {
     margin: 0;
-    font-family: $regular;
-    font-size: 1.4rem;
+    font-family: $roman;
+    font-size: 1.3rem;
     line-height: 1.5;
     @include media($medium) {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
     }
 }
 
@@ -33,27 +33,24 @@
         font-size: 2rem;
     }
     @include media($xlarge) {
-        font-size: 2.4rem;
+        font-size: 2.2rem;
     }
     @include media($xxlarge) {
-        font-size: 2.8rem;
+        font-size: 2.2rem;
     }
 }
 
 @mixin small-font-style {
     margin: 0;
     font-family: $regular;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     line-height: 1.5;
-    @include media($medium) {
-        font-size: 1.6rem;
-    }
 }
 
 @mixin headings-font-style {
     margin: 0;
     padding-bottom: 0.5em;
-    font-family: $bold;
+    font-family: $roman;
     &:last-child {
         padding-bottom: 0;
     }

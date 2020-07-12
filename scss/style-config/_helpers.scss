@@ -2,6 +2,12 @@
     padding-left: $gutter-space;
     padding-right: $gutter-space;
 }
+@mixin link {
+    @include small-font-style;
+    text-decoration: none;
+    color: lighten($z-black, 50);
+    font-style: italic;
+}
 @mixin wrapper {
     max-width: 104rem;
     margin: 0 auto;
