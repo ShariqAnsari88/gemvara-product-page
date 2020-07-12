@@ -4,9 +4,11 @@
 }
 @mixin link {
     @include small-font-style;
+    font-family: $roman;
     text-decoration: none;
     color: lighten($z-black, 50);
     font-style: italic;
+    color: $link-color;
 }
 @mixin wrapper {
     max-width: 104rem;

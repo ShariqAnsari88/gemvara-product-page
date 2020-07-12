@@ -679,6 +679,17 @@ template {
 
 .product-decision-options {
   width: 25%; }
+  .product-decision-options a.link {
+    margin: 0;
+    font-family: "open-sans-regular", sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    font-family: "Noto Serif", serif;
+    text-decoration: none;
+    color: gray;
+    font-style: italic;
+    color: #8dcae8;
+    font-style: normal; }
   .product-decision-options .product-info {
     width: 100%; }
     .product-decision-options .product-info .title {
@@ -703,9 +714,11 @@ template {
       font-family: "open-sans-regular", sans-serif;
       font-size: 1.2rem;
       line-height: 1.5;
+      font-family: "Noto Serif", serif;
       text-decoration: none;
       color: gray;
-      font-style: italic; }
+      font-style: italic;
+      color: #8dcae8; }
     .product-decision-options .product-info .product-price {
       margin: 0;
       padding-bottom: 0.5em;
@@ -729,11 +742,51 @@ template {
         .product-decision-options .product-info .product-price {
           font-size: 2.8rem; } }
   .product-decision-options .payment-options-dd {
-    width: 100%; }
+    width: 100%;
+    justify-content: space-between;
+    position: relative; }
     .product-decision-options .payment-options-dd .drop-down-selector {
-      width: 100%;
+      width: calc(100% - 3.5rem);
+      text-transform: uppercase;
       height: 4.5rem;
-      border: 0.1rem solid #bfbfbf; }
+      position: relative;
+      border: 0.1rem solid gray;
+      border-radius: 0.3rem; }
+      @media screen and (min-width: 50em) {
+        .product-decision-options .payment-options-dd .drop-down-selector {
+          width: 100%; } }
+      .product-decision-options .payment-options-dd .drop-down-selector:after {
+        border-style: solid;
+        border-width: 0.2rem 0.2rem 0 0;
+        content: '';
+        display: inline-block;
+        height: 1rem;
+        width: 1rem;
+        right: 2rem;
+        top: 1.2rem;
+        position: absolute;
+        transform: rotate(135deg);
+        vertical-align: top; }
+    .product-decision-options .payment-options-dd .info-pop {
+      width: 2rem;
+      height: 2rem;
+      border: 0.1rem solid #bfbfbf;
+      border-radius: 50%;
+      cursor: pointer; }
+      @media screen and (min-width: 50em) {
+        .product-decision-options .payment-options-dd .info-pop {
+          position: absolute;
+          right: -3rem;
+          top: 1.2rem; } }
+      .product-decision-options .payment-options-dd .info-pop:after {
+        content: '?';
+        opacity: .5; }
+  .product-decision-options .buy-buttons a {
+    flex: 48%;
+    max-width: 100%;
+    text-align: center; }
+    .product-decision-options .buy-buttons a:first-child {
+      margin-right: 4%; }
 
 .product-summary {
   padding: 45px 0; }
@@ -873,6 +926,42 @@ template {
     font-size: 1.2rem;
     display: block;
     opacity: 0.55; }
+
+.expert-advise {
+  background-color: #e6ffe6; }
+  .expert-advise .e-a-inner-content {
+    padding: 4rem 0;
+    margin: 0 auto;
+    width: 75%;
+    text-align: center; }
+    .expert-advise .e-a-inner-content article {
+      font-size: 1.4rem; }
+      @media screen and (min-width: 50em) {
+        .expert-advise .e-a-inner-content article {
+          font-size: 1.6rem; } }
+      .expert-advise .e-a-inner-content article br {
+        display: none; }
+        @media screen and (min-width: 50em) {
+          .expert-advise .e-a-inner-content article br {
+            display: inline-block; } }
+    .expert-advise .e-a-inner-content .len-text a {
+      padding: 1rem;
+      text-decoration: none;
+      color: #000000;
+      font-size: 1.4rem;
+      text-transform: uppercase;
+      letter-spacing: 0.2rem; }
+    .expert-advise .e-a-inner-content .main-cta a {
+      font-size: 2.4rem;
+      font-style: italic;
+      position: relative;
+      color: #000000;
+      text-decoration: none; }
+      .expert-advise .e-a-inner-content .main-cta a:after {
+        position: absolute;
+        content: "....";
+        bottom: -1.5rem;
+        left: calc(50% - 12px); }
 
 /* Slider */
 .slick-slider {
