@@ -30,7 +30,7 @@ $(document).ready(function(){
     //Functions initialization
     slickSlider.init();
 
-
+    // Product summary accordion
     if ($(window).width() < 800) {
         $(".p-s-column h4").on("click", function () {
             $(".accr").slideUp();
@@ -40,9 +40,10 @@ $(document).ready(function(){
         });
     }
 
+    // Product payment option drop down
     $('#paymentDd').on("click", function(e){
-        e.preventDefault();
         e.stopPropagation();
+        $(this).toggleClass('active');
         $('#paymentOptions').toggleClass('show');
     });
     $('#paymentDd ul li li').on("click", function(){
@@ -50,9 +51,24 @@ $(document).ready(function(){
         $(this).addClass('selected');
         $('#dd-selected').text($(this).text());
     });
+    
+    // Product Customizer Pops
+    $('.customizer').on("click", function(e){
+        e.stopPropagation();
+        $(this).siblings().removeClass('active');
+        $(this).toggleClass('active');
+        $(this).siblings().find('.customizer-pops').removeClass('show');
+        $(this).find('.customizer-pops').toggleClass('show');
+    });
+
+
+    // On body click remove events
     $(document).click(function(e) {
-        if($('#paymentOptions').hasClass('show')) {
+        if($('#paymentOptions').hasClass('show') || $('.customizer').hasClass('active')) {
             $('#paymentOptions').removeClass('show');
+            // $('').removeClass('active');
+            $('.customizer, #paymentDd').removeClass('active');
+            $('.customizer-pops').removeClass('show');
         }
     });
 

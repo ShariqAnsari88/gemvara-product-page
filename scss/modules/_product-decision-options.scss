@@ -81,8 +81,15 @@
                 top: 1.4rem;
                 position: absolute;
                 transform: rotate(135deg);
-                vertical-align: top;
                 opacity: 0.5;
+                transition: all ease .3s;
+            }
+
+            &.active {
+                &:after {
+                    transform: rotate(-45deg);
+                    top: 1.9rem;
+                }
             }
         }
         .info-pop {

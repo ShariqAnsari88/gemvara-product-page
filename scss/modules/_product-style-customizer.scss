@@ -9,9 +9,6 @@
         @include media($medium) {
             display: flex;
         }
-        .subtitle {
-
-        }
         .title {
             @include large-font-style;
         }
@@ -36,6 +33,14 @@
             height: 8rem;
             position: relative;
             flex-flow: row;
+            cursor: pointer;
+            transition: all ease .3s;
+
+            &:hover {
+                @include box-shadow;
+            }
+
+            @import 'customizer-pops';
 
             .title {
                 font-weight: 600;
@@ -106,6 +111,14 @@
                 transform: rotate(135deg);
                 vertical-align: top;
                 opacity: 0.5;
+                transition: all ease .3s;
+            }
+
+            &.active {
+                @include box-shadow;
+                &:after {
+                    transform: rotate(-45deg);
+                }
             }
 
             &.hide-chev {
